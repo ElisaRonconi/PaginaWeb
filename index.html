@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>INTRODUCCIÓN A LA INFORMÁTICA</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c33a894ea6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2 class="logo">INTRODUCCIÓN</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+        &#8801
+        </label>
+        <nav class="menu">
+        <a href="#funciones">FUNCIONES</a>
+        <a href="#bits">BITS</a>
+        <a href="#cpu">CPU</a>
+        <a href="#memoria">MEMORIA</a>
+        <a href="#buses">BUSES PUERTOS PERIFERICOS</a>
+        <label for="check" class="esconder-menu">
+        &#215
+        </label>
+        </nav>
+    
+    </header>
+
+    <section id="hero">
+        <h1> </h1>
+        <h1>FUNDAMENTOS DEL HARDWARE <br>Dentro de la caja</h1>
+        <h2> CAPÍTULO 2</h2>
+        <h3>Introducción a la Informática  6ª Edición   por George Beekman.</h3>
+    </section>
+
+<section id="caracteristicas">
+        <div class="container">
+            <H1>Después de leer este capítulo debe ser capaz de:</H1>
+            <ul>
+                <li>✔️ Explicar en términos generales cómo almacenan y manipulan la información las computadoras.</li>
+                <li>✔️ Describir la estructura y la organización básica de una computadora.</li>
+                <li>✔️ Debatir las funciones e interacciones de los principales componentes internos del sistema de una computadora.</li>
+                <li>✔️ Explicar por qué generalmente una computadora tiene diferentes tipos de dispositivos de memoria y almacenamiento.</li>
+            </ul>
+            <h2> <span class="color-acento">¡COMENCEMOS!</span></h2>
+        </div>
+    </section>
+
+
+    <section id="funciones">
+            <h1>¿Que hacen las <span class="color-acento">computadoras  </span> ?</h1>
+            <p> La simple verdad es que las computadoras realizan sólo cuatro funciones básicas:</p>
+            <div class="contenido-iconos">
+                <div> <i class="fa-solid fa-keyboard fa-6x"></i>
+                    <h4>Recibir una entrada.</h4>
+                    <p> Aceptan información del mundo exterior. </p></div>
+                <div> <i class="fa-solid fa-microchip fa-6x"></i>
+                    <h4>Procesar información.</h4>
+                    <p> Realizan operaciones aritméticas o lógicas  sobre la información. </p></div>
+                <div> <i class="fa-solid fa-desktop fa-6x"></i>
+                    <h4>Producir una salida.</h> 
+                    <p> Comunican información al mundo exterior. </p></div>
+                <div id="icono-archivo"> 
+                    <i class="fa-solid fa-database fa-6x"></i>
+                    <h4>Almacenar información.</h4> 
+                    <p>Desplazan y mueven información en la memoria. </p></div>
+                </div>
+        </section>
+
+        <section id="fun2">
+        <div class="container">    
+            <p> <strong>Cada sistema de computadora contiene componentes hardware (partes físicas) especializadas en cada una de estas cuatro funciones:</strong></p>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Dispositivos de entrada:</h3>
+                    <p>Aceptan una entrada del mundo exterior. Los dispositivos más comunes de entrada hoy día, desde luego, son los teclados y los dispositivos para señalar, como el ratón.</p>
+                </div> 
+                <div class="carta">
+                    <h3>Dispositivos de salida:</h3>
+                    <p>Envían información al mundo exterior. La mayoría de las computadoras utilizan una pantalla como la del televisor, o un monitor de vídeo, como dispositivo principal de salida, una impresora para producir papeles impresos y altavoces para dar salida a los sonidos.</p>
+                </div>
+                <div class="carta">
+                    <h3>Microprocesador</h3>
+                    <p>También llamado procesador o unidad central de procesamiento (CPU), es, en efecto, el «cerebro» de la computadora. La CPU procesa información, realiza cálculos aritméticos y toma decisiones básicas comparando valores de información.</p>
+                    </div> 
+                <div class="carta">
+                    <h3>Memoria y dispositivos de almacenaje</h3>
+                    <p>Ambos información, pero sirven a diferentes propósitos. La memoria de la computadora(algunas veces llamada almacenaje primario) o RAM(memoria de acceso aleatorio, random access memory) se utiliza para almacenar programas y datos (información) que necesitan ser instantáneamente accesibles para la CPU. Los dispositivos de almacenamiento (algunas veces llamados almacenamiento secundario), incluyendo las unidades de disco duro, CD grabables, unidades de DVD y unidades de cinta, sirven como repositorios de datos. Un dispositivo de almacenamiento (por ejemplo, un disco duro), puede considerarse como un dispositivo combinado de entrada y salida, porque la computadora envía información al dispositivo de almacenamiento (salida) y más tarde recupera esa información de allí (entrada).</p>
+                </div>
+            </div>   
+            <p>Estos cuatro tipos de componentes, al combinarse, constituyen la parte del <span class="color-acento">HARDWORE</span> del sistema de una computadora. Desde luego, el sistema no está completo sin el software (las instrucciones que indican al hardware qué hacer). Pero ahora podemos concentrarnos en el hardware. En este capítulo echamos un vistazo a la unidad central de procesamiento y a la memoria de la computadora; estos componentes están en el centro de todas las operaciones informáticas. En el siguiente capítulo atenderemos a la entrada, la salida y los dispositivos de almacenamiento, es decir, los periféricos del sistema de computación. Como cada componente del hardware está diseñado para transportar o para transformar información, comenzamos con un poco de información sobre la información. </p>
+        </section>
+
+        <section id="bits">
+        <div class="container">
+            <h2>Un poco sobre los bits</h2>
+            <p>El término información es difícil de definir, porque tiene muchos significados. De acuerdo con una definición popular, la información es comunicación que tiene valor porque informa. Esta distinción puede ser útil para tratar con datos de la televisión, revistas, computadoras y otras fuentes. Pero no siempre está claro, y no es absoluto.</p>
+            <p>Como educador y autor, <span class="color-acento">Richard Saul Wurman</span> señala: <em>«Todo el mundo necesita una medida personal con la que definir la información. Lo que significa información para una persona pueden ser datos para otra. Si no tiene sentido para usted, no cuenta».</em></p>
+            <p>En el extremo opuesto, una teoría de comunicación define la información como cualquier cosa que puede ser comunicada, tenga valor o no. Según esta definición, la información viene en muchas formas. Las palabras, números e imágenes de estas páginas son símbolos que representan información. Si subraya o destaca esta frase, está añadiendo nueva información a la página. Incluso los sonidos y las imágenes que emanan de un anuncio de televisión están envueltos en información, aunque sea discutible si la mayoría de esa información es útil. 
+            <p>Algunas personas intentan aplicar estrictamente la primera definición a las computadoras, sosteniendo que éstas convierten los datos brutos, que no tienen valor en su forma actual, en información que es valiosa. Este método enfatiza el rol de la computadora como una máquina comercial de proceso de datos. Pero en nuestro mundo moderno interconectado, la salida de una computadora es a menudo la entrada de otra. Si una computadora recibe un mensaje de otra, ¿el mensaje son datos sin valor o es información valiosa? ¿Y qué medida personal de valor se aplica? </p>
+        </div>
+    </section> 
+
+    <section id="corazon">
+        <div class="container">
+            <h1>El corazón de la computadora: <span class="color-acento">CPU</span> y <span class="color-acento">MEMORIA</span></h1>
+            <P>Puede parecer extraño pensar en los cajeros automáticos, las consolas de videojuegos y las supercomputadoras como en procesadores de bits. Pero sea cual sea su aspecto ante el usuario, una computadora digital es en su núcleo un conjunto de conmutadores on/offdiseñados para transformar información de una forma a otra. El usuario proporciona a la computadora patrones de bits (entrada) y ésta sigue las instrucciones para transformar esa entrada en un patrón diferente de bits (salida) que devolver al usuario.</P>
+        </div>
+    </section> 
+
+    <section id="cpu">
+        <div class="container">  
+        <h1>La CPU: la computadora real</h1>
+        <p>La CPU, a menudo llamada sólo <span class="color-acento">procesador</span>, realiza las transformaciones de entrada en salida. Cada computadora tiene al menos una CPU para interpretar y ejecutar las instrucciones de cada programa, para hacer las manipulaciones aritméticas y lógicas de datos, y para comunicarse con las otras partes del sistema indirectamente a través de la memoria. Un <span class="color-acento">microprocesadormoderno</span>, o CPU, es un conjunto extraordinariamente complejo de circuitos electrónicos. En una computadora de escritorio, la CPU está junto con otros chips y componentes electrónicos en un panel de circuitos. El panel de circuitos que contiene la CPU se llama <span class="color-acento">placa madre </span> o <span class="color-acento">placa base</span>. Actualmente todavía hay en uso muchas clases diferentes de CPU; cuando elige una computadora, el tipo de CPU es una parte importante de la decisión. Aunque hay muchas variaciones de diseño entre ellas, sólo dos factores son importantes para un usuario ocasional: la compatibilidad y el rendimiento.</p>
+        <div class="programas">
+            <div class="carta">
+                <h3>Rendimiento</h3>
+                <p>El rendimiento global de una computadora está determinado en parte por la velocidad del reloj interno de su microprocesador (el dispositivo de temporización que produce impulsos eléctricos para sincronizar las operaciones). La velocidad del reloj de una computadora se mide en unidades llamadas gigahertzios (GHz), miles de millones de ciclos por segundo. Los anuncios de sistemas informáticos nuevos enfatizan a menudo los valores como la medida de la velocidad. Pero estos números pueden de algún modo llevar a engaño; juzgar la velocidad de una computadora por su valor en gigahertzios es como medir la velocidad de un coche por las revoluciones por minuto del motor.</p>
+            </div> 
+            <div class="carta">
+                <h3>Compatibilidad</h3>
+                <p>No todo el software es compatible con todas las CPU; es decir, el software escrito para un procesador generalmente no funcionará con otro. Cada procesador tiene un conjunto de instrucciones integrado, un vocabulario de instrucciones que el procesador puede ejecutar. Las CPU de la misma familia de productos están generalmente diseñadas para que los procesadores más recientes puedan procesar todas las instrucciones que aceptaban los modelos anteriores.</p>
+            </div>
+        </div>
+        </div>
+</section>
+    
+<section id="memoria">
+    <div class="container">
+        <h1>La <span class="color-acento">MEMORIA</span> de la computadora</h1>
+        <P>La principal tarea de la <span class="color-acento">CPU</span> es seguir las instrucciones codificadas en los programas. Pero igual que Alicia en el país de las maravillas, la <span class="color-acento">CPU</span> sólo puede manipular una instrucción y unos pocos datos cada vez. La computadora necesita un lugar donde almacenar el resto del programa y los datos hasta que el procesador esté listo. Para eso está la <span class="color-acento">RAM</span>.</P>
+        <P>La <span class="color-acento">RAM</span> (random access memory, memoria de acceso aleatorio) es el tipo más común de almacenamiento primario, o de memoria. Los chips de la <span class="color-acento">RAM</span> contienen circuitos que almacenan temporalmente las instrucciones y los datos del programa. La computadora divide cada chip de la <span class="color-acento">RAM</span> en muchas ubicaciones de memoria del mismo tamaño.</P>
+        <p> Las ubicaciones de memoria, como las casas, tienen direcciones únicas para que la computadora pueda indicarles aparte cuándo ha de guardar o recuperar la información. Puede almacenar un fragmento de información en cualquier ubicación RAM (puede elegir una al azar) y la computadora puede, si se le indica, recuperarla rápidamente. De aquí el nombre de memoria de acceso aleatorio.</p>
+        <p>La información almacenada en la RAM no es más que un patrón de corriente eléctrica fluyendo a través de circuitos microscópicos en chips de silicio. Esto significa que cuando la energía sale de la computadora se olvida instantáneamente de todo lo que se recordaba en la RAM.<br> La RAM se llama a veces memoria volátil, porque la información almacenada allí no se mantiene permanentemente. Esto podría ser un serio problema si la computadora no tuviera otro tipo de memoria donde almacenar la información que no se quiere perder. Esta memoria no volátil se llama ROM (readonly memory, memoria de sólo lectura)porque la computadora sólo puede leer la información almacenada en ella; nunca puede escribir ninguna información nueva. Todas las computadoras modernas incluyen ROM que contiene instrucciones de arranque y otra información crítica. La información de la ROM fue grabada en ella cuando se fabricó el chip, así que está disponible siempre que la computadora está funcionando, pero no puede cambiarse salvo reemplazando el chip de la ROM. Hay otros tipos de memoria disponibles; la mayoría se utilizan raramente fuera de los laboratorios de ingeniería. <br>Hay dos excepciones notables:</P>
+    <UL>
+        <li>La <span class="color-acento">CMOS</span> (complementary metal oxide semiconductor, semiconductor complementario de óxido de metal)es una clase especial de RAM de baja energía que puede almacenar pequeñas cantidades de datos durante largos periodos de tiempo con la energía de la batería. La CMOS RAM almacena la fecha, la hora y el calendario de un PC. (La CMOS RAM se llama parameterRAM [PRAM] en los Macintosh.)</li>
+        <LI><br>Los chips de <span class="color-acento">memoria Flash</span>, como los chips de la RAM, pueden escribirse y borrarse rápida y repetidamente. Pero a diferencia de la RAM, la memoria flash no es volátil; puede mantener sus contenidos sin flujo de electricidad. Las cámaras digitales, los teléfonos móviles, los buscas, las computadoras portátiles, las de bolsillo, las PDA y otros dispositivos digitales utilizan memoria flash para almacenar los datos que necesitan cambiarse de vez en cuando. Los grabadores de datos del vuelo también la utilizan. La memoria flash es aún demasiado cara para sustituir a la RAM y otros medios comunes de almacenamiento, pero puede que en el futuro sustituya a los discos duros, así como a los chips de memoria.</LI>
+    </UL>
+    <P>Recuperar los datos de la memoria lleva algún tiempo al procesador, pero no mucho. El tiempo de acceso de la mayoría de las memorias se mide en nanosegundos (ns), milmillonésimas de segundo. Compare esta cifra con el tiempo de acceso del disco duro, que se mide en milisegundos (ms), milésimas de segundo. La velocidad de la memoria (el tiempo de acceso) es otro factor que afecta a la velocidad global de la computadora.</P>
+    </div>
+</section> 
+    
+<section id="buses">
+    <div class="container">
+        <h1><span class="color-acento">BUSES, PUERTOS Y PERIFÉRICOS</span> </h1>
+        <p>En una computadora portátil, la CPU, los chips de memoria y otros componentes clave están integrados en la placa madre. La información viaja entre los componentes de la placa madre a través de grupos de cables llamados <span class="color-acento">buses del sistema</span>, o sólo buses. Los buses tienen generalmente 32 ó 64 cables, o rutas de datos; un bus de 32 cables se llama bus de 32 bits, porque puede transmitir 32 bits de información a la vez, el doble que un antiguo bus de 16 bits.</p> 
+        <p>Igual que las autopistas de muchos carriles permiten a grandes masas de automóviles desplazarse a mayor velocidad que las carreteras de un solo carril, los buses más amplios pueden transmitir la información más deprisa que los buses más estrechos. Las computadoras nuevas, más potentes, tienen buses más amplios para que puedan procesar la información con más rapidez. Los buses conectan con los dispositivos de almacenamiento situados en las bahías(áreas abiertas en la caja del sistema para discos duros y otros dispositivos). <br> Los buses también pueden conectarse a las ranuras de expansión (a veces llamadas sólo ranuraso slots) dentro de la computadora.</p>
+        <p>Los usuarios pueden personalizar sus computadoras insertando paneles de circuitos con propósitos especiales (llamados tarjetas de expansión, o sólo tarjetas) en esas ranuras. Los buses también se conectan a buses externos y a <span class="color-acento">puertos</span>(conectores en el exterior del chasis de la computadora). La parte posterior de una computadora tiene generalmente varios tipos de puertos para cubrir distintas necesidades. Algunos de esos puertos (donde puede conectar el teclado y el ratón, por ejemplo) están conectados directamente a la placa del sistema. Otros, como el puerto del monitor, están disponibles generalmente mediante una tarjeta de expansión. De hecho, muchas tarjetas de expansión hacen poco más que proporcionar los puertos convenientes para conectar tipos particulares de periféricos.Otro ejemplo son los portátiles, en los que podemos encontrar generalmente una o dos ranuras de tarjeta PC para añadir tarjetas del tamaño de una tarjeta de crédito.</p>
+        <p>En las computadoras portátiles, en las que el tamaño es crítico, la mayoría de los puertos comunes van directamente a la tarjeta del sistema. Como las computadoras portátiles no tienen espacio para las tarjetas de tamaño grande, muchas tienen ranuras para tarjetasPC(tarjetas del tamaño de una tarjeta de crédito que contienen memoria, periféricos en miniatura y puertos adicionales). (Cuando salieron por primera vez estas tarjetas, se conocían por el nombre de tarjetas PCMCIA. Un escritor sugirió humorísticamente que eran las siglas de People Can’t Memorize Computer Industry Acronyms [la gente no puede entender los acrónimos de la industria informática], aunque el desafortunado acrónimo significa realmente Personal Computer Memory Card International Association. Por suerte, el nombre se acortó por el más simple de tarjeta PC.)</p>
+        <p>Las ranuras y los puertos facilitan la adición de dispositivos externos, llamados <span class="color-acento">periféricos</span>, al sistema de la computadora, para que la CPU pueda comunicarse con el mundo exterior y almacenar información para su uso posterior. Sin periféricos, la CPU y la memoria juntas son como un cerebro sin cuerpo.<br> Algunos periféricos, como teclados e impresoras, sirven como vínculos de comunicación entre las personas y las computadoras. Otros periféricos vinculan a la computadora con otras máquinas. Otros proporcionan medios de almacenamiento a largo plazo.</p>
+    </div>
+</section> 
+    
+    <section id="resumen">
+        <h2>RESUMEN</h2>
+        <h4>Ya esté trabajando con palabras, números, imágenes o sonidos, una computadora está manipulando patrones de bits: dígitos binarios de información que puede almacenar en la circuitería de conmutación y que está representada por dos símbolos. Los grupos de bits pueden tratarse como números para cálculos utilizando el sistema numérico binario. Los bits pueden agruparse en mensajes codificados que representen caracteres alfabéticos, imágenes, colores, sonidos o cualquier otra clase de información. Incluso las instrucciones que siguen las computadoras (los programas de software que le indican qué hacer) deben reducirse a cadenas de bits antes de que la computadora los acepte.</h4>
+        <h4>  El byte, el kilobyte, el megabyte y otras unidades comunes para medir las cantidades de bits se utilizan en descripciones de memoria, almacenamiento y tamaño de archivo.</h4>
+        <h4> El microprocesador, o unidad central de procesamiento (CPU), sigue las instrucciones del software para realizar los cálculos y las manipulaciones lógicas que transforman los datos de entrada en salida. No todas las Resumen CPU son compatibles entre sí; cada una es capaz de procesar un conjunto particular de instrucciones, así que un programa software escrito para una familia de procesadores puede no ser entendido por un procesador de otra familia. Los ingenieros están constantemente mejorando la velocidad del reloj y la arquitectura de las CPU, haciendo a las computadoras capaces de procesar más rápidamente la información.</h4>
+        <h4> La CPU utiliza la RAM (memoria de acceso aleatorio) como un área de almacenamiento temporal (un bloc de notas) para instrucciones y datos. Otro tipo de memoria, la ROM (memoria de sólo lectura), contiene información no intercambiable que sirve como material de referencia para la CPU al ejecutar instrucciones del programa.</h4>
+        <h4> La CPU y la memoria principal están albergadas en chips de silicio de la placa madre y otras tarjetas de circuitos dentro de la computadora. Los buses conectan con ranuras y puertos que permiten a la computadora comunicar con los dispositivos internos y los periféricos externos.</h4>
+    <form action="https://tisgtacna.files.wordpress.com/2017/10/introduccion_a_la_informatica_beekman_ge.pdf">
+        <button>LIBRO EN PDF</button>
+    </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; TECNOLOGIA DE LA INFORMACIÓN Y COMUNICACIÓN 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
