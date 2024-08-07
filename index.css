@@ -1,0 +1,416 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.1em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+    border: 3px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(194, 52, 71);
+}
+
+button:hover{
+    background-color: rgba(237, 118, 134, 0.847);;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(194, 52, 71); }
+
+header{
+    background-color: rgb(245,245,245);
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(194, 52, 71);;
+    font-size: 1.6em;
+
+}
+
+.menu a {
+    color: rgb(3, 3, 3);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor:pointer;
+    display:none;
+    transition:0,4s;
+}
+.mostrar-menu {
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color:  rgb(194, 52, 71);
+}
+#check{
+    display: none;
+}
+
+@media (max-width:900px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    *{padding:0 2px;}
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(223, 208, 208, 0.894);
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right:0;
+    }
+    #resumen h4{
+        padding: 5px 0px;
+    }
+    .contenido-iconos {
+        flex-direction: column;
+
+    }
+    .contenido-iconos div{
+        border-right: none;
+    }
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 105vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/placainicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#hero h2{
+    color: white;
+}
+#hero h3{
+    color: white;
+}
+
+#caracteristicas{
+    margin: 20px;
+    padding: 50px 5px;
+}
+#caracteristicas h2{
+    text-align: center;
+    border: 1px solid rgb(194, 52, 71);
+    padding: 20px 40px;
+    align-self: baseline;
+}
+
+#funciones .container{
+    padding: 150px 12px;
+}
+
+#funciones {
+    padding: 0px 50x;
+    background:rgba(194, 52, 71, 0.023) ;
+}
+#funciones h1{
+    padding: 20px 40px;
+    align-self: baseline;
+    text-align: center;
+}
+#funciones p{
+    text-align: center;
+}
+
+#iconos{
+    padding: 0px 50px;
+}
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-iconos div{
+    flex: 1;
+    margin: 25px 0px;
+    border-right: 2px solid rgba(194, 52, 71, 0.426);
+
+}
+#icono-archivo{
+    border-right: none;
+}
+.contenido-iconos div i{
+    color:  rgb(194, 52, 71);
+}
+
+.contenido-iconos div h4{
+    color: rgb(194, 52, 71);
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+.contenido-iconos div p{
+    color: rgb(14, 11, 12);
+    font-size: 15px;
+}
+
+#fun2 P{
+    text-align: justify;
+    padding: 50px;
+}
+#fun2 .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#fun2 .carta h3{
+    color:rgb(245,245,245) ;
+    padding: 30px 0px;
+    margin: 5px;
+    text-align: center;
+}
+#fun2 .carta p{
+    color:rgb(245,245,245) ;
+    padding: 0px 0px;
+    margin: 30px;
+}
+
+#cpu{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: justify;
+    padding: 50px;
+}
+
+#cpu .container{
+    padding: 150px 12px;
+}
+
+#cpu h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#cpu .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 30px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/r.cpu.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/c.cpu.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/fonfo.jpg");
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/funcio.jpg");
+}
+
+#bits{
+    background-color: rgba(165, 42, 42, 0.159);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("IMG/bits.jpg");
+    background-position: center center;
+    background-size:cover;
+    padding: 50px 12px;
+    margin: 10px;
+    border-radius: 15px;
+    color: rgb(252, 246, 238);
+    text-align: justify;
+}
+.bits{
+    padding: 150px 12px;
+}
+#corazon{
+    padding: 50px 20px;
+    margin: 30px;
+    text-align: justify;
+
+}
+#memoria{
+    text-align: justify;
+    padding: 50px;
+}
+
+#buses{
+    text-align: justify;
+    padding: 50px;
+}
+
+
+#resumen{
+    padding: 50px ;
+    margin:30px;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+
+}
+#resumen h2{
+    text-align: center;
+}
+#resumen h4{
+    text-align: justify;
+
+}
+#resumen button{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+    #funciones .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #funciones .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: left;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #funciones h2{
+        margin-top: 0px;
+    }
+
+
+
+
+
+}
